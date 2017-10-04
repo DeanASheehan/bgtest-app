@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Demo Application</title>
+  <link rel="stylesheet" href="./bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./bower_components/rainbow/themes/github.css">
+  <link rel="stylesheet" href="./bower_components/angular-chart.js/dist/angular-chart.css">
+	
+	
+  <link href="bootstrap.css" rel="stylesheet">
+  <link href="app.css" rel="stylesheet">
+</head>
+<body ng-app="examples" id="top">
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-1"></div>
+		
+		<div class="col-md-10" id="bar-chart" ng-controller="BarCtrl">
+			<div class="panel panel-default">
+				<div class="panel-heading">Version API Distribution</div>
+
+				<div class="panel-body">
+					<canvas id="bar" 
+						class="chart chart-bar" 
+						chart-data="data" 
+						chart-labels="labels" 
+						chart-options="options" 
+						chart-legend="true"
+						>
+					</canvas>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-1"></div>
+	</div>
+</div>
+
+	<script src="./bower_components/angular/angular.min.js"></script>
+	<script src="./bower_components/Chart.js/Chart.js"></script>
+	<script src="./bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+	<script src="./bower_components/rainbow/js/rainbow.min.js"></script>
+	<script src="./bower_components/rainbow/js/language/generic.js"></script>
+	<script src="./bower_components/rainbow/js/language/html.js"></script>
+	<script src="./bower_components/rainbow/js/language/javascript.js"></script>
+	<script src="./bower_components/angular-chart.js/angular-chart.js"></script>
+	<script src="./bower_components/angular-chart.js/angular-chart.js"></script>
+
+	<script type='text/javascript' src="app.js"></script>
+
+</body>
+</html>
